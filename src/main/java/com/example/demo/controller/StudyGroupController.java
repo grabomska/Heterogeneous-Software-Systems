@@ -23,7 +23,7 @@ public class StudyGroupController {
         return studyGroup;
     }
 
-    @GetMapping("/study_group/show_all")
+    @GetMapping("/study_group/show-all")
     public List<StudyGroup> getStudyGroup() {
         return studyGroupJdbc.showAll();
     }

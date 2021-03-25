@@ -24,13 +24,13 @@ public class StudentController {
     }
 
     // показать всех студентов
-    @GetMapping("/student/show_all")
+    @GetMapping("/student/show-all")
     public List<Student> showAll() {
         return studentJdbc.showAll();
     }
 
     // показать по группе
-    @GetMapping("/student/group_id/{group_id}")
+    @GetMapping("/student/group-id/{group_id}")
     public List<Student> showByGroup(@PathVariable int group_id) {
         return studentJdbc.showByGroup(group_id);
     }
